@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Externa</title>
+</head>
+<body>
+    <h1>Página dentro del iframe</h1>
+    <p>Intentando modificar el DOM de la página principal...</p>
+    <script>
+        try {
+            parent.document.getElementById("mensaje").innerText = "¡Mensaje modificado por el iframe!";
+        } catch (error) {
+            console.error("No se pudo modificar el DOM de la página principal: ", error);
+        }
+    </script>
+</body>
+</html>

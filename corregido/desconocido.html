@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Externa</title>
+</head>
+<body>
+    <h1>Página dentro del iframe</h1>
+    <p>Comunicándose de forma segura...</p>
+    <script>
+        window.parent.postMessage("Intento de comunicación segura", "*");
+    </script>
+</body>
+</html>
